@@ -10,7 +10,7 @@ console.log(greet);
 
 let a = "hello";
 
-let b = `${a} yahoo baba`
+let b = `${a} yahoo baba` // `${a}` <= expression.
 
 console.log(b);
 

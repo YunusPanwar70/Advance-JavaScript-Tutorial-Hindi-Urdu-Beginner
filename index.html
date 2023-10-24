@@ -8,7 +8,29 @@
 </head>
 
 <body>
+    <script>
+        // let hello = () => {
+        //     for (let i = 1; i <= 10; i++) {
+        //         console.log(typeof `${i * 2}`);
+        //     }
+        // }
+        // hello()
 
+
+        let user = ["Yunus", 18, "jodhpur", [2, 4],
+            [10, 22]
+        ];
+
+        let [name, , city, [num1],
+            [, num2]
+        ] = user;
+
+        console.log(name);
+        // console.log();
+        console.log(city);
+        console.log(num1);
+        console.log(num2);
+    </script>
 </body>
 
 </html>

@@ -1,44 +1,39 @@
-// Old Type Work
+// // Old Type Work
 
 function hello() {
     console.log("Hello");
-}
-
-hello();
-
-let hey = function(params) {
-    console.log("How are you");
 };
+hello()
 
-hey();
+let hey = function() {
+    console.log("World");
+};
+hey()
 
 // Arrow Function
 
-let a = () => console.log("Yahoo Baba");
-
+let a = () => console.log("How");
 a();
 
 // Old & New
 
-let welcome = function(name) {
-    return `hello & welcome ${name}`
+let b = function(name) {
+    return `Are ${name}`
 }
-console.log(welcome("Yahoo baba"));
+console.log(b("You!"));
 
-// new
+// New With Arrow Function 
 
-let welcome1 = (name1) => {
-    return `hello ${name1} `
+
+let c = (name1) => {
+    return `Hello ${name1}`
 }
+console.log(c("Yahoo Baba"));
 
-console.log(welcome1("Yahoo baba"));
+// Multipal arrow function
 
-
-
-
-let welcome2 = (name2, age) => {
-    return `hello ${name2} ${age} `
+let d = (names, age) => {
+    return `Hello ${names} ${age}`
 }
-
-console.log(welcome2("Yahoo baba", 25));
-console.log(typeof welcome2);
+console.log(d("Yunus", 18));
+console.log(typeof d);

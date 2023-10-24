@@ -1,45 +1,68 @@
-// Global
+// Old Version Variable
+
+// Var
+
+// var x = "Hello";
+// var x = "World"; Re diclar
+// x = "Wow"; Reasing
+
+// Let 
+
+// let y = "Hello";
+// let y = "world"; Re diclar Erorr
+// y = "Wow"; Reasing Kar Sakhte 
+
+// Const 
+
+// const z = "Hello";
+// const z = "World" Re diclar Error
+// z = "Wow" Reasign Nahi Kar Sakte
+
+// New Version
+
+// Global Scope Var
 
 if (1 === 1) {
-    var a = "hello";
+    var a = "Hello";
 };
-
 console.log(a);
 
-// Block
+// Block Scope Let
 
 if (1 === 1) {
-    let a = "hello";
+    let b = "Hello";
+    console.log(b); //Right Condition
 };
+// console.log(b); Error
 
-console.log(a);
-
-// Block & error
+// Block Scope Const
 
 if (1 === 1) {
     const c = "Hello";
-}
 
-// console.log(c);
+    console.log(c); //Right Condition 
+};
+// console.log(c); Error
 
-// Global
+// Loop Example
 
-for (var i = 0; i <= 5; i++) {
-    document.write(i + "<br>")
-}
+// Global Scope Var 
+
+for (var i = 1; i <= 5; i++) {
+    document.write(i + "<br>");
+};
 console.log(i);
 
-// Block & error
+// Block Scope Let Error
 
-for (let i = 0; i <= 5; i++) {
+for (let j = 1; j <= 5; j++) {
     document.write(i + "<br>")
 }
-console.log(i);
+// console.log(j); Error
 
-// Block & error
+// Block Scope Const Error
 
-
-for (const i = 0; i <= 5; i++) {
-    document.write(i + "<br>")
+for (let k = 1; k <= 5; k++) {
+    document.write(k + "<br>")
 }
-// console.log(i); error
+// console.log(k); Error

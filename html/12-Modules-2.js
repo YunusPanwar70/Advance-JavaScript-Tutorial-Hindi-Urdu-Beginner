@@ -1,0 +1,1 @@
+export let a = "ES6 Modules";
