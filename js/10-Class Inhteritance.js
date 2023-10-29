@@ -55,44 +55,44 @@
 // let b = new manager("Yunus");
 // b.info();
 
-// Third Method
-class employee {
-    constructor(name, age, salary) {
-        this.empname = name;
-        this.empage = age;
-        this.empsalary = salary;
-        console.log("Constructor Employee 3");
-    }
+// // Third Method
+// class employee {
+//     constructor(name, age, salary) {
+//         this.empname = name;
+//         this.empage = age;
+//         this.empsalary = salary;
+//         console.log("Constructor Employee 3");
+//     }
 
-    info() {
-        console.log(`Employee Class 
-        Name : ${this.empname}
-        Age : ${this.empage}
-        Salary ${this.empsalary}`);
-    }
-}
+//     info() {
+//         console.log(`Employee Class 
+//         Name : ${this.empname}
+//         Age : ${this.empage}
+//         Salary ${this.empsalary}`);
+//     }
+// }
 
-class manager extends employee {
-    info() {
-        let ta = 1000;
-        let pa = 300;
-        let totalsalay = this.empsalary + ta + pa;
+// class manager extends employee {
+//     info() {
+//         let ta = 1000;
+//         let pa = 300;
+//         let totalsalay = this.empsalary + ta + pa;
 
-        console.log(`Manager Class 
-        Name: ${this.empname}
-        Age :${this.empage}
-        Salary : ${this.empsalary}`);
+//         console.log(`Manager Class 
+//         Name: ${this.empname}
+//         Age :${this.empage}
+//         Salary : ${this.empsalary}`);
 
-    }
-}
-class test extends manager {
+//     }
+// }
+// class test extends manager {
 
-}
+// }
 
-let c = new manager("Yassu", 18, 10000)
-let d = new employee("Yunus", 18, 20000)
-c.info();
-d.info();
+// let c = new manager("Yassu", 18, 10000)
+// let d = new employee("Yunus", 18, 20000)
+// c.info();
+// d.info();
 
-let f = new test("hello", 2, 34324);
-f.info();
+// let f = new test("hello", 2, 34324);
+// f.info();

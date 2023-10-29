@@ -6,6 +6,6 @@ document.getElementById("btn").addEventListener("click",
                 console.log(this.responseText);
             }
         }
-        xhttp.open('GET', 'https://jsonplaceholder.typicode.com/users', true); // Use 'readme.txt' instead of 'redme.txt'
+        xhttp.open('GET', 'https://jsonplaceholder.typicode.com/users', true);
         xhttp.send();
     })
