@@ -1,16 +1,16 @@
 // One Methods
 
-// let complete = true;
+let complete = true;
 
-// let prom = new Promise(function(resolve, reject) {
-//     if (complete) {
-//         resolve("I am successfull.");
-//     } else {
-//         reject("I am failed.");
-//     }
-// });
+let prom = new Promise(function(resolve, reject) {
+    if (complete) {
+        resolve("I am successfull.");
+    } else {
+        reject("I am failed.");
+    }
+});
 
-// console.log(prom);
+console.log(prom);
 
 // Secound Method
 
@@ -122,20 +122,20 @@
 
 // Seven With Ajex
 
-function prom() {
-    return new Promise(function(resolve, reject) {
-        console.log("Featchind data please wait");
-    })
-    setTimeout(() => {
-        $.get("https://jsonplaceholder.typicode.com/posts", function(data) {
-            console.log(data);
-        })
-    })
-}
+// function prom() {
+//     return new Promise(function(resolve, reject) {
+//         console.log("Featchind data please wait");
+//     })
+//     setTimeout(() => {
+//         $.get("https://jsonplaceholder.typicode.com/posts", function(data) {
+//             console.log(data);
+//         })
+//     })
+// }
 
 
-prom().then((result) => {
-    console.log(result);
-}).catch((error) => {
-    console.log(error);
-});
+// prom().then((result) => {
+//     console.log(result);
+// }).catch((error) => {
+//     console.log(error);
+// });
