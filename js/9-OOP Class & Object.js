@@ -80,4 +80,8 @@ class student4 {
         this.studentage = age1;
         console.log("5th Constructor Method");
     }
-}
+};
+
+let g = new student4("musavvir",25);
+console.log(g.studentname);
+console.log(g.studentage);
