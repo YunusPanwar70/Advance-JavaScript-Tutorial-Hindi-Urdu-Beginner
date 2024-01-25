@@ -1,3 +1,3 @@
-import { a } from "../js/12-Modules-2.js";
+import { a } from "../js/11.2-Modules-2";
 
 console.log(a);
