@@ -1,4 +1,4 @@
-let promisecall = function(returnData, message) {
+let promisecall = function (returnData, message) {
     function(resolve, reject) {
         setTimeout(() => {
             console.log(`The ${message} promise has resolved`);
