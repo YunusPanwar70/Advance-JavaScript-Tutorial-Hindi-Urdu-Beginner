@@ -1,141 +1,73 @@
-// One Methods
+// Promise => 
+// 1 - Pending => Jab tak result nahi aata.
+// 2 - FullFilled => Jab promise successfully complete ho jata hai aur result milta hai
+// 3 - Reject => Jab promise fail ho jata hai aur koi error aati hai.
 
-let complete = true;
-
-let prom = new Promise(function(resolve, reject) {
-    if (complete) {
-        resolve("I am successfull.");
-    } else {
-        reject("I am failed.");
-    }
-});
-
-console.log(prom);
-
-// Secound Method
+//          Promise
+// resolve()        reject()
+//  then()           catch()
 
 // function prom(complete) {
-//     return new Promise(function(resolve, reject) {
-//         if (complete) {
-//             resolve("I am successful");
-//         } else {
-//             reject("i am failes");
-//         }
-//     })
-// };
+//     return new Promise(function (resolve, reject) {
+//         console.log('Fetching Data, Please Wait.');
 
-// console.log(prom(true));
-
-// Third Methods
-
-// function prom(complete) {
-//     return new Promise(function(resolve, reject) {
-//         if (complete) {
-//             resolve("I am successful")
-//         } else {
-//             reject("I am failed")
-//         }
-//     })
-// }
-
-// // console.log(prom(true));
-
-// let onfullfilment = (result) => {
-//     console.log(result);
-// }
-
-// let onrejection = (error) => {
-//     console.log(error);
-// }
-
-// prom(true).then(onfullfilment);
-// prom(true).catch(onrejection);
-
-// Four Method
-
-// function prom(complete) {
-//     return new Promise(function(resolve, reject) {
-//         console.log("fatching data,please wait");
 //         setTimeout(() => {
 //             if (complete) {
-//                 resolve("i am succesful");
+//                 resolve('I am successfull');
 //             } else {
-//                 reject("i am failed");
+//                 reject('I am failed.');
 //             }
-//         }, 1000)
-//     })
-// };
+//         }, 1000);
+//     });
+// }
+// prom(true).then(function (result) { console.log(result); }).catch(function (error) { console.log(error); })
 
-// let onfullfilment = (result) => {
+// let onFulFillment = (result) => {
 //     console.log(result);
 // }
-
-// let onrejection = (error) => {
+// let onRejection = (error) => {
 //     console.log(error);
 // }
-
-// prom(true).then(onfullfilment).catch(onrejection);
-
-// Five Mehtod
-
-// function prom(complete) {
-//     return new Promise(function(resolve, reject) {
-//         console.log("Fatching data , please wait");
-//         setTimeout(() => {
-//             if (complete) {
-//                 resolve("i am succesful")
-//             } else {
-//                 reject("i am failed")
-//             }
-//         }, 1000)
-//     })
-// }
-
-// prom(true).then((result) => {
-//     console.log(result);
-// }).catch((error) => {
-//     console.log(error);
-// });
-
-// Six Method
+// prom(true).then(onFulFillment);
+// prom(false).catch(onRejection);
 
 // function prom(a, b) {
-//     return new Promise(function(resolve, reject) {
-//         console.log("Fatching data ,Please Wait");
+//     return new Promise(function (resolve, reject) {
+//         console.log('Fetching Data, Please Wait.');
 //         let c = a / b;
 //         setTimeout(() => {
 //             if (a, b) {
-//                 resolve(`Your answer ${c}`)
+//                 resolve(`Your answer: ${c}`);
 //             } else {
-//                 reject("fialed calculate")
+//                 reject('Failed to calculate');
 //             }
-//         }, 1000)
-//     })
+//         }, 1000);
+//     });
 // }
+// prom(5, 2).then(function (result) { console.log(result); }).catch(function (error) { console.log(error); })
 
+// Real life example by AJAX
 
-// prom(5, 2).then((result) => {
-//     console.log(result);
-// }).catch((error) => {
-//     console.log(error);
-// });
+function prom() {
+    return new Promise(function (resolve, reject) {
+        console.log('Fetching data, please wait');
+        setTimeout(() => {
+            $.get('https://jsonplaceholder.typicode.com/posts', function (data) {
+                resolve(data);
+            }).fail(err => {
+                reject('Fail to load JSON.')
+            })
+        }, 2000)
+    });
+}
+prom().then(function (result) { console.log(result); }).catch(function (error) { console.log(error); })
 
-// Seven With Ajex
-
-// function prom() {
-//     return new Promise(function(resolve, reject) {
-//         console.log("Featchind data please wait");
-//     })
-//     setTimeout(() => {
-//         $.get("https://jsonplaceholder.typicode.com/posts", function(data) {
-//             console.log(data);
-//         })
-//     })
-// }
-
-
-// prom().then((result) => {
-//     console.log(result);
-// }).catch((error) => {
-//     console.log(error);
-// });
+// let MyPromise = new Promise(function (resolve, reject) {
+//     let success = true;
+//     if (success) {
+//         resolve('Success');
+//     } else {
+//         reject('Failure!')
+//     }
+// })
+// MyPromise.then(function (result) { console.log(result); }).catch(function (error) { console.log(error); });

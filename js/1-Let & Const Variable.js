@@ -2,21 +2,21 @@
 
 // Var
 
-// var x = "Hello";
-// var x = "World"; Re diclar
-// x = "Wow"; Reasing
+var x = "Hello";
+var x = "World"; // Re diclar
+x = "Wow";      //  Reasing
 
 // Let 
 
-// let y = "Hello";
-// let y = "world"; Re diclar Erorr
-// y = "Wow"; Reasing Kar Sakhte 
+let y = "Hello";
+// let y = "world";  //Re diclar Erorr
+y = "Wow";       // Reasing Kar Sakhte 
 
 // Const 
 
 // const z = "Hello";
-// const z = "World" Re diclar Error
-// z = "Wow" Reasign Nahi Kar Sakte
+// const z = "World"  // Re diclar Error
+// z = "Wow"         //  Reasign Nahi Kar Sakte
 
 // New Version
 
@@ -49,20 +49,20 @@ if (1 === 1) {
 // Global Scope Var 
 
 for (var i = 1; i <= 5; i++) {
-    document.write(i + "<br>");
+    // document.write(i + "<br>");
 };
 console.log(i);
 
 // Block Scope Let Error
 
 for (let j = 1; j <= 5; j++) {
-    document.write(i + "<br>")
+    // document.write(i + "<br>")
 }
 // console.log(j); Error
 
 // Block Scope Const Error
 
 for (let k = 1; k <= 5; k++) {
-    document.write(k + "<br>")
+    // document.write(k + "<br>")
 }
-// console.log(k); Error
+// console.log(k);  // Error

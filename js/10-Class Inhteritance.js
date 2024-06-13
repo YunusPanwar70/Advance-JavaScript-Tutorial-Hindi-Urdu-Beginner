@@ -1,15 +1,17 @@
-// class employee {
-//     constructor(name) {
-//         console.log(`Constructor : Employee ${name}`);
-//     }
-// }
+class Employee {
+    constructor(name) {
+        console.log(`Constructor : Employee ${name}`);
+    }
+}
 
-// class manager extends employee {
-//     constructor(name) {
-//         super();
-//         console.log(`Constructor : Employee ${name}`);
-//     }
-// }
+class Manager extends Employee {
+    constructor(name) {
+        super(name);
+        console.log(`Constructor : Employee ${name}`);
+    }
+}
+const emp = new Employee("John");
+const mgr = new Manager("Alice");
 
 // let a = new manager("Yahoo Baba");
 
@@ -76,36 +78,36 @@
 
 // 4th Class
 
-class employee {
-    constructor(name, age, salary) {
-        this.empname = name;
-        this.empage = age;
-        this.empsalary = salary;
-        // console.log(`Constructor : Employee`);
-    }
+// class employee {
+//     constructor(name, age, salary) {
+//         this.empname = name;
+//         this.empage = age;
+//         this.empsalary = salary;
+//         // console.log(`Constructor : Employee`);
+//     }
 
-    info() {
-        document.write(`<h3>Employee Name</h3>
-        Name : ${this.empname} <br>
-        Age : ${this.empage}<br>
-        Salary : ${this.empsalary}`)
-    }
-}
+//     info() {
+//         document.write(`<h3>Employee Name</h3>
+//         Name : ${this.empname} <br>
+//         Age : ${this.empage}<br>
+//         Salary : ${this.empsalary}`)
+//     }
+// }
 
-class manager extends employee {
-    info() {
-        let ta = 1000;
-        let pa = 300;
-        let totalSalary = this.empsalary + ta + pa;
+// class manager extends employee {
+//     info() {
+//         let ta = 1000;
+//         let pa = 300;
+//         let totalSalary = this.empsalary + ta + pa;
 
-        document.write(`<h3>Employee Name</h3> 
-        Name : ${this.empname} <br>
-        Age : ${this.empage}<br>
-        Salry : ${totalSalary}`)
-    }
-}
+//         document.write(`<h3>Employee Name</h3> 
+//         Name : ${this.empname} <br>
+//         Age : ${this.empage}<br>
+//         Salry : ${totalSalary}`)
+//     }
+// }
 
-let a = new manager("Yahoo Baba", 25, 25000);
+// let a = new manager("Yahoo Baba", 25, 25000);
 // let b = new employee("Yunus", 19, 20000)
-a.info();
+// a.info();
 // b.info();
