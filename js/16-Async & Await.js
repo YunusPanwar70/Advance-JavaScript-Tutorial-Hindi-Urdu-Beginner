@@ -24,7 +24,7 @@ async function asaw() {
     // const students = await reponse.json();
     // return (await fetch('https://jsonplaceholder.typicode.com/posts')).json();
 }
-asaw().then(function (res) {console.log(res);})
+asaw().then(function (res) { console.log(res); })
 // .catch(function (error) {
 //     console.log(error);
 // }) 
